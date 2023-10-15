@@ -1,0 +1,45 @@
+concept_hardware
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [Железо]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [Hardware]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   ["Hardware" (железо) - это термин, который в контексте компьютеров и техники обозначает физические компоненты и устройства, которые составляют компьютерную систему или другие электронные устройства]
+   (* <- lang_ru;; *);
+
+->nrel_inclusion:
+   tom;
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. Железо]
+   	   (* <- lang_ru;; *);
+         [Def. (Hardware)]
+		   (* <- lang_en;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [Центральный процессор (CPU) - микросхема, выполняющая вычисления и управляющая работой компьютера.]
+   		    (* <- lang_ru;; *);;
+   	    *);
+          ...
+          (*
+             -> rrel_example:
+               [Жесткий диск (Hard Drive) - устройство для долгосрочного хранения данных.]
+               (* <- lang_en;; *);;
+          *);;
+      <= nrel_using_constants: {
+
+			concept_notebook
+   	 };;
+  *);;
