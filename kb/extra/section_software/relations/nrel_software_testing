@@ -1,0 +1,29 @@
+nrel_software_testing
+<- sc_node_norole_relation;
+=>nrel_main_idtf:
+  [тестировать](* <- lang_ru;; *);
+  [testing](* <- lang_en;; *);;
+
+nrel_prevail <- rrel_key_sc_element:...
+(*
+    <- sc_definition;;
+    <- definition;;
+    => nrel_main_idtf:
+    [Опр. (тестировать)](*<- lang_ru;;*);
+    [Def. ( testing)](*<- lang_en;;*);;
+    <= nrel_sc_text_translation: ...
+    (*
+        -> rrel_example:
+            [Тестирование - это процесс проверки программного обеспечения на соответствие требованиям, выявление ошибок, дефектов и оценка его качества.](*<- lang_ru;;*);;
+        -> rrel_example:
+            [Testing is the process of checking software for compliance with requirements, identifying errors, defects and assessing its quality.](*<- lang_en;;*);;
+    *);;
+*);;
+
+nrel_prevail
+=>nrel_first_domain:concept_software;
+=>nrel_second_domain:concept_hardware;
+
+<- binary_relation ;
+<- antireflexive_relation ;
+<- transitive_relation ;;
