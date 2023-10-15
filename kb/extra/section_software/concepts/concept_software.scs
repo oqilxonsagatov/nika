@@ -1,0 +1,60 @@
+concept_software
+<- sc_node_class;
+<- class;
+
+=> nrel_main_idtf:
+   [Программное Обеспечение]
+   (* <- lang_ru;; *);
+=> nrel_main_idtf:
+   [software]
+   (* <- lang_en;; *);
+
+=> nrel_note:
+   [Программное обеспечение (ПО) - это совокупность программ, процедур и данных, которые обеспечивают функционирование компьютерной системы или выполняют определенные задачи на компьютере.]
+   (* <- lang_ru;; *);
+
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр.ПО]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [Программное обеспечение (ПО) - это совокупность программ.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+			concept_system_software;
+			concept_application_software;
+			concept_network_software;
+			concept_mobile_software;
+			};;
+  *);
+
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр.ПО]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [Системное программное обеспечение (System Software): Это программы, которые обеспечивают основные функции компьютерной системы]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+
+			nrel_approaches_system_software;
+			concept_hardware;
+			rrel_form;
+			concept_notebook
+   	 };;
+  *);;
