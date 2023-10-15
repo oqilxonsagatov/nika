@@ -1,47 +1,39 @@
-/* Таким образом можно оставлять комментарии в исходных файлах
- базы знаний. Очень важно отметить, что названия sc-элементов 
- должны быть написаны на латинице и соответствовать требованиям,
- предъявляемые к синтаксису внешних знаков в SC-коде. Со всеми
- требованиями можно ознакомиться в Стандарте Технологии
- проектирования интеллектуальных систем OSTIS (смотрите ссылки
- выше).*/
 section_software
 => nrel_main_idtf:
-	  [Раздел. Программное обеспечение]
-  (* <- lang_ru;; *);
-	  [Section. Software] 
-  (* <- lang_en;; *);
+[Раздел. Программное обеспечение]
+(* <- lang_ru;; );
+[Section. Software]
+( <- lang_en;; *);
 <- atomic_section;;
 
-/* Структура предметной области (основные компоненты) */
 section_software = [*
-	subject_software
+section_software
 <- sc_node_struct;
-	=> nrel_main_idtf:
-   [Интерфейс пользователя]
-   (* <- lang_ru;; *);
-   [User InterfaceUser Interface]
-   (* <- lang_en;; *);
-	<- subject_domain;
-	-> rrel_main_menu:
-   concept_main_software;
-   concept_software;
-	-> rrel_not_main_menu:
-   concept_toolbar;
-	-> rrel_navigation_panes:
-   nrel_content_area;
-   nrel_properties_pane;
-   nrel_context_menus;
-   nrel_status_bar;;
+=> nrel_main_idtf:
+[Предметная область программное обеспечение]
+(* <- lang_ru;; );
+[Subject domain of software]
+( <- lang_en;; *);
+<- subject_domain;
+-> rrel_maximum_studied_object_class:
+concept_software;
+-> rrel_not_maximum_studied_object_class:
+concept_hardware;
+-> rrel_explored_relation:
+nrel_software_development;
+nrel_software_testing;
+nrel_software_engineering;
+rrel_describe;
+rrel_form;;
 *];;
 
 section_software
 -> rrel_key_sc_element:
-   section_software;
-   concept_main_software;
-   concept_software;
-   nrel_content_area;
-   nrel_properties_pane;
-   nrel_context_menus;
-   nrel_status_bar;;
-*];;
+subject_domain_of_software;
+concept_software;
+concept_hardware;
+nrel_software_development;
+nrel_software_testing;
+nrel_software_engineering;
+rrel_describe;
+rrel_form;;
