@@ -1,25 +1,25 @@
 section_software
 => nrel_main_idtf:
-[Раздел. Программное обеспечение]
-(* <- lang_ru;; );
-[Section. Software]
-( <- lang_en;; *);
+	[Раздел. Программное обеспечение]
+(* <- lang_ru;; *);
+	[Section. Software]
+(* <- lang_en;; *);
 <- atomic_section;;
 
 section_software = [*
-section_software
+	section_software
 <- sc_node_struct;
-=> nrel_main_idtf:
-[Предметная область программное обеспечение]
-(* <- lang_ru;; );
-[Subject domain of software]
-( <- lang_en;; *);
-<- subject_domain;
--> rrel_maximum_studied_object_class:
+  	=> nrel_main_idtf:
+  [Предметная область программное обеспечение]
+  (* <- lang_ru;; *);
+  [Subject domain of software]
+  (* <- lang_en;; *);
+	<- subject_domain;
+	-> rrel_maximum_studied_object_class:
 concept_software;
--> rrel_not_maximum_studied_object_class:
+	-> rrel_not_maximum_studied_object_class:
 concept_hardware;
--> rrel_explored_relation:
+	-> rrel_explored_relation:
 nrel_software_development;
 nrel_software_testing;
 nrel_software_engineering;
