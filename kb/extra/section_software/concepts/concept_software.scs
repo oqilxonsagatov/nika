@@ -32,7 +32,7 @@ concept_software
 			concept_system_software;
 			concept_application_software;
 			concept_network_software;
-			concept_mobile_software;
+			concept_mobile_software
 			};;
   *);
 
