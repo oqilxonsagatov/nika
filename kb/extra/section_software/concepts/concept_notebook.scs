@@ -37,6 +37,6 @@ concept_notebook
       <= nrel_using_constants: {
 
 			concept_software;
-         concept_hardware;
+         concept_hardware
    	 };;
   *);;
